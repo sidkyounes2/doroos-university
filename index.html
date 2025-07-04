@@ -43,6 +43,19 @@
       <p>تصفح الفصول والدروس المفصلة حسب اهتمامك وتخصصك القانوني.</p>
     </section>
   </main>
+  <script>
+  const searchInput = document.getElementById('searchInput');
+  const lessonsList = document.getElementById('lessonsList');
+  const lessons = lessonsList.getElementsByTagName('li');
+
+  searchInput.addEventListener('input', () => {
+    const filter = searchInput.value.toLowerCase();
+    for (let li of lessons) {
+      const text = li.textContent.toLowerCase();
+      li.style.display = text.includes(filter) ? '' : 'none';
+    }
+  });
+</script>
 
   <footer>
     <p>&copy; 2025 منصة دروس القانون. جميع الحقوق محفوظة.</p>
