@@ -1,36 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Arial', sans-serif;
-  background: #f9f9f9;
+  font-family: 'Cairo', 'Roboto', sans-serif;
+  background: #f5f7fa;
+  color: #2c3e50;
   margin: 0;
   padding: 0;
   direction: rtl;
-  text-align: right;
+  line-height: 1.6;
 }
+
 header {
-  background-color: #0d47a1;
+  background-color: #1e3a8a;
   color: #fff;
-  padding: 2rem 1rem;
-  text-align: center;
+  padding: 1rem 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-header h1 {
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0 15px;
+}
+
+nav ul.season-nav {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  font-size: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
-a {
-  color: #0d47a1;
+
+nav ul.season-nav li a {
+  color: #bbdefb;
   text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
+
+nav ul.season-nav li a:hover,
+nav ul.season-nav li a:focus {
+  background-color: #3b82f6;
+  outline: none;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e40af;
+}
+
 footer {
   text-align: center;
-  background: #eee;
   padding: 1rem;
+  background: #e2e8f0;
+  color: #334155;
   font-size: 0.9rem;
+  margin-top: 3rem;
 }
-.lesson-content {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-  font-size: 1.1rem;
-  line-height: 1.7;
+
+@media (max-width: 600px) {
+  header {
+    justify-content: center;
+  }
+  nav ul.season-nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
