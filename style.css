@@ -1,0 +1,36 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: right;
+}
+header {
+  background-color: #0d47a1;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+a {
+  color: #0d47a1;
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.lesson-content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
